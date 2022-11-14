@@ -6,7 +6,7 @@ A comment box with nested replies. Perfect for practicing positioning. Intermedi
 - Tailwind
 
 ## Data
-```json
+```
 [
 	{
 		id: 1,
