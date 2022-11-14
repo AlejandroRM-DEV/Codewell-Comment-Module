@@ -1,13 +1,5 @@
-# Codewell-Comment-Module
-A comment box with nested replies. Perfect for practicing positioning. Intermediate level.
-
-## Stack
-- NextJS 13 Experimental 
-- Tailwind
-
-## Data
-```json
-[
+// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+const comments = [
 	{
 		id: 1,
 		user: "adamsdavid",
@@ -44,8 +36,8 @@ A comment box with nested replies. Perfect for practicing positioning. Intermedi
 		time: "20 hours ago",
 		replies: [],
 	},
-]
-```
+];
 
-## Demo
-![Image](/demo/desktop.png "Desktop")
+export default function handler(req, res) {
+	res.status(200).json(comments);
+}

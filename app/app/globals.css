@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	body {
+		@apply bg-gradient-to-b from-[#ffcb8f]  to-[#ff9f86];
+	}
+
+	main {
+		@apply flex justify-center items-center h-screen;
+	}
+
+	.comment {
+		@apply mx-4 mt-4 flex;
+	}
+
+	.comment__body {
+		@apply ml-4 flex flex-col w-full;
+	}
+
+	.comment__actions {
+		@apply flex;
+	}
+
+	.comment__actions > * {
+		@apply mr-4;
+	}
+}
